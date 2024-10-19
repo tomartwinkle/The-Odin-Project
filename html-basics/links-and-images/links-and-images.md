@@ -23,4 +23,4 @@ Example: <img src="image.jpg" alt="A beautiful image"><br><br>
 Image Size: We can specify dimensions of the image.<br>
 Example: <img src="image.jpg" alt="A beautiful image" width="300" height="200"><br>
 <br>
-Do checkout the assignment at : https://tomartwinkle.github.io/html-basics/links-and-images/links-and-images.html
+Do checkout the assignment at : https://tomartwinkle.github.io/The-Odin-Project/html-basics/links-and-images/links-and-images.html
