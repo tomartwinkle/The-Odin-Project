@@ -8,4 +8,4 @@ Example: A list of features or options.<br>
 <br>
 Both types of lists are useful for organizing content. The main difference is that ordered lists are numbered, while unordered lists are bulleted.
 <br>
-do check out the assignment at : https://tomartwinkle.github.io/The-Odin-Project/html-basics/list/lists.html
+do check out the assignment at : https://tomartwinkle.github.io/The-Odin-Project/html-basics/lists/lists.html
