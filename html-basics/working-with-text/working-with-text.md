@@ -10,3 +10,5 @@
 5. Relationships Between Nested Elements: HTML elements can be nested inside each other, meaning one tag can go inside another (e.g., a paragraph can contain bold or italic text). It has a parents child relationship.<br>
 
 6. HTML Comments: You can add comments in HTML using !-- comment here -- inside tags. Comments won't appear on the webpage but are useful for notes within the code.
+<br>
+Do check out the assignment at : https://tomartwinkle.github.io/The-Odin-Project/html-basics/working-with-text/assignment.html
