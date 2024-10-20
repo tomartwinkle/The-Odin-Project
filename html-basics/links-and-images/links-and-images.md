@@ -1,4 +1,5 @@
 # Links and Images
+### Do checkout the assignment at : https://tomartwinkle.github.io/The-Odin-Project/html-basics/links-and-images/links-and-images.html
 Anchor Elements: Links are created using the <a> tag. The link destination is specified using the href attribute. <br>
 Example: <a href="https://www.example.com">Visit Example</a><br><br>
 
@@ -23,4 +24,4 @@ Example: <img src="image.jpg" alt="A beautiful image"><br><br>
 Image Size: We can specify dimensions of the image.<br>
 Example: <img src="image.jpg" alt="A beautiful image" width="300" height="200"><br>
 <br>
-Do checkout the assignment at : https://tomartwinkle.github.io/The-Odin-Project/html-basics/links-and-images/links-and-images.html
+
