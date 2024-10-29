@@ -1,9 +1,8 @@
 # Methods to add CSS to HTML 
 There are 3 ways to add style through CSS to any basic HTML code and hence, website : <br>
 - internal
-- inline
 - external
-  The most common one is the external method.
+- inline
 
 ## Internal 
 Instead of creating a separate css file it involves adding style to the htmk file itself.It involves adding the rules inside opening and closing pair of 
