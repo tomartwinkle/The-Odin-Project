@@ -5,7 +5,7 @@ There are 3 ways to add style through CSS to any basic HTML code and hence, webs
 - inline
 
 ## Internal 
-Instead of creating a separate css file it involves adding style to the htmk file itself.It involves adding the rules inside opening and closing pair of 
+Instead of creating a separate css file it involves adding style to the html file itself.It involves adding the rules inside opening and closing pair of 
 style tags inside the head tag.
 ```bash
 <head>
