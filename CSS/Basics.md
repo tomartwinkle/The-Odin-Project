@@ -71,4 +71,108 @@ margin-bottom: 10px ;
 here, only the p tag elements inside the div elements will have this styling.
 <br><br>
 3. **Class Selectors** 
-<br> 
+<br> <br>
+Class selectors apply to all the elements inside a class and the class is the one we specify. The basic syntax is that we specify the class attribute <br.
+inside the html elements tag and then in the stle.css document we write the case sensitive name of the class attribute after a period(.) followed by curly brackets 
+and then specify our style requirements. 
+Classes aren’t required to be specific to a particular element, so you can use the same class on as many elements as you want.
+
+Another thing you can do with the class attribute is to add multiple classes to a single element as a space-separated list, such as class="alert-text severe-alert"
+Since whitespace is used to separate class names like this, you should never use spaces for multi-worded names and should use a hyphen instead.
+```bash
+<--! index.html -->
+<div class="button"> This is a class selector </div>
+```
+```bash
+<--! style.css-->
+.button{
+   color: pink;
+   background-color: blue;
+  font-family: serif;
+}
+```
+<br>
+4. **ID Selectors**
+<br><br>
+ID selectors are used to style elements that have a specific id attribute. ID selectors are denoted by a # symbol followed by the ID name. Unlike classes, IDs are meant to be unique and applied to only one element per page.
+The major difference between classes and IDs is that an element can only have one ID. It cannot be repeated on a single page and should not contain any whitespace.
+
+```bash
+<!-- index.html -->
+
+<div id="title">This is an ID selector</div>
+```
+```bash
+/* styles.css */
+
+#title {
+  background-color: red;
+}
+```
+<br>
+
+5. **Grouping Selector**
+<br>
+If 2 or more selectors have the same common declarations we can just group them using commas , <br>
+for example :
+```bash
+.read{
+color:pink;
+background-color: blue;
+}
+.unread{
+color: pink;
+font-size: 20px;
+}
+```
+Instead we can group them as : 
+```bash
+.read,.unread{
+  color: pink;
+}
+.read{
+(unique declarations)
+}
+.unread{
+(unique declarations)
+}
+```
+<br>
+
+6. **Chaining Selectors**
+   <br> <br>
+   Another way to use selectors is to chain them as a list w/o separation ,
+   Chaining selectors in CSS allows you to apply styles only when certain elements meet multiple criteria. This can include combining class selectors, ID selectors, element selectors, and pseudo-classes to increase specificity.
+   This syntax basically works for chaining any combination of selectors, except for chaining more than one type selector.
+
+## Descendant Combinator
+The descendant combinator in CSS is used to apply styles to elements that are nested within other elements, regardless of their direct relationship. This combinator is represented by a space between two selectors. The second selector in the chain is the target, but it will only be styled if it’s a descendant (nested inside) of the first selector
+## Properties
+1. color and background color : <br>
+  ```bash
+p {
+  /* hex example: */
+  color: #1100ff;
+}
+
+p {
+  /* rgb example: */
+  color: rgb(100, 0, 127);
+}
+
+p {
+  /* hsl example: */
+  color: hsl(15, 82%, 56%);
+}
+
+  ```
+2. typography basics and text align : <br>
+
+3. image height and weight :<br>
+```bash
+img {
+  height: auto;
+  width: 500px;
+}
+
+```
