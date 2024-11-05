@@ -1,5 +1,5 @@
 # Assignments
-links : 1. https://tomartwinkle.github.io/The-Odin-Project/01-css-methods.html
+links : 1. https://tomartwinkle.github.io/The-Odin-Project/CSS/intro-to-css/01-css-methods.html
 
 
 # Methods to add CSS to HTML 
