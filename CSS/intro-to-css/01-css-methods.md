@@ -51,4 +51,10 @@ In the CSS file (e.g., styles.css), use selectors (like div or p) followed by cu
 
 Naming the CSS file as style.css or styles.css is common, but any name ending in .css works. This setup keeps HTML and CSS separate, making the HTML cleaner and allowing for easy updates across multiple pages by editing a single CSS file.
 ## Inline
+Used to add css directly to the elements but this method isnt as useful. 
+```bash
+<body>
+  <div style="color: white; background-color: black;">...</div>
+</body>
 
+```
