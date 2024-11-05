@@ -1,1 +1,18 @@
+.odd {
+    color: black;
+    background-color: pink;
+    font-family: Verdana, DejaVu Sans, sans-serif;
+}
+#two {
+    color: blue;
+    font-size: 36px;
+}
+.updated {
+    font-size: 24px;
+} 
+#four {
+    font-size: 24px;
+    background-color: lightgreen;
+    font-weight: 700;
+}
 
