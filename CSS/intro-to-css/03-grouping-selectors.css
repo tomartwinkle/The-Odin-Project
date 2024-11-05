@@ -1,0 +1,13 @@
+.button,.new-button{
+    font-size: 28px;
+    font-family: 'helvatica, Times New Roman , Sans-serif';
+  }
+  .button{
+    color: white;
+    background-color: black;
+    font-weight: 700;
+  }
+  .new-button{
+    color: black;
+    background-color: yellow;
+  }
