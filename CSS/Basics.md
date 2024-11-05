@@ -115,6 +115,7 @@ The major difference between classes and IDs is that an element can only have on
 <br>
 If 2 or more selectors have the same common declarations we can just group them using commas , <br>
 for example :
+
 ```bash
 .read{
 color:pink;
