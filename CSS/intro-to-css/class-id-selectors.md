@@ -1,2 +1,0 @@
-# Class and ID selectors
-
