@@ -25,3 +25,4 @@ Example: Highlighting a word or phrase within a paragraph for emphasis. <br><br>
 Block elements are best for laying out structure: < div >, < p >, < header >, etc. <br>
 Inline elements are great for styling text and small items within content flow: < a >, < span >, < img >, etc.
 Normal flow : Refers to how elements naturally position themselves on a page without any additional styling.
+
