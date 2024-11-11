@@ -127,6 +127,8 @@ body{
   .container .one, .two, .three, .four{
     height:250px;
     width:auto;
+      border: 8px blue;
+      border-radius:10px;
   }
   
   .boxes{
