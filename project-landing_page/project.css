@@ -33,11 +33,11 @@ body{
     flex-direction: row;
     margin-right: 55px;
     padding: 0%;
-    gap: 15px;
+    gap: 25px;
     color: #e5e7ebbc;
     font-size: 16px;
     align-items: center;
-    margin-left:750px;
+    margin-left:600px;
   }
   .heading{
     color:#f9faf8;
