@@ -127,6 +127,8 @@ body{
   .container .one, .two, .three, .four{
     height:250px;
     width:auto;
+      border: 8px blue;
+      border-radius:10px;
   }
   
   .boxes{
@@ -147,15 +149,15 @@ body{
     flex-direction: column;
     padding-left:300px;
     padding-right: 300px;
-    padding-top:120px;
-    padding-bottom: 60px;
+    padding-top:100px;
+    padding-bottom: 50px;
   }
   
   .quote{
     color: #1F2937;
     font-style: italic;
     font-family: 'roboto',sans-serif;
-    font-size: 34px;
+    font-size: 30px;
   
     justify-content: left;
     text-align: left;
