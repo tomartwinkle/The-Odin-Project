@@ -25,9 +25,7 @@ body{
     padding:8px;
     font-size: 22px;
   }
-  .header-list{
-    margin-left:900px;
-  }
+ 
   
   ul{
     list-style-type: none;
@@ -39,7 +37,7 @@ body{
     color: #e5e7ebbc;
     font-size: 16px;
     align-items: center;
-    margin-left:600px;
+    margin-left:750px;
   }
   .heading{
     color:#f9faf8;
