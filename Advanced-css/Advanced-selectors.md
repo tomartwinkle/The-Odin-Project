@@ -137,3 +137,44 @@ output : Let’s 😎 😄 🤓 emojify 🤓 😄 😎 this span!
 ##### Recap 
 Pseudo-classes = Real elements in specific states <br>
 Pseudo-elements = Virtual parts of elements or added content
+### Attribute Selectors
+Recall that an attribute is anything in the opening tag of an HTML element - such as src='picture.jpg' or href="www.theodinproject.com".
+<br><br>
+- [attribute] - This general selector will select anything where the given attribute exists. Its value doesn’t matter.
+  
+- selector[attribute] - Optionally we can combine our attribute selectors with other types of selectors, such as class or element selectors.
+  
+- [attribute="value"] - To get really specific, we can use = to match a specific attribute with a specific value.
+Example :
+```
+[src]{
+//targets any element with src attribute
+}
+
+img[src]{
+//targets only img elements with src attributes
+}
+
+img[src="puppy.jgp"]{
+//targets only the img element with the src attribute having the value of puppy.jpg
+}
+```
+Sometimes we want to specifically select attributes and their values. Example : if i want to select all img elements having the attribute value that contains '.jpg' extentsion i can use some specific attribute selectors:
+1. [attribute^="value"] - ^= Will match strings from the start.
+2. [attribute$="value"] - $= Will match strings from the end.
+3. [attribute*="value"] - *= The wildcard selector will match anywhere inside the string
+```
+[class^='aus']{
+//classes are attributes too!!
+this targets any class that starts with the value of 'aus'
+}
+
+[src$='.jpg']{
+//will select src attributes with the .jpg extension at the end
+}
+
+[for*='ill']{
+//selects any attribute that has 'ill' anywhere inside it
+}
+
+```
