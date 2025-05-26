@@ -1,22 +1,90 @@
-# CSS Units 
-- **absolute units :** px is an absolute unit , ie: it will not be relative to the screen or other elements, it will remain fixed. <br>
-- **relative units :** em and rem(root em) are relative units , ie: they change wrt to the context. rem is preferred over em. <br> 
-  rem and em are usually used to specify font size but can be used for other elements as well. <br>
-  if an element's font size is 16px then setting its width to 4em will make its font size 64px. <br>
-  rem sets the value of the root but em sets the value of parent element which is what makes em more complex. <br>
-- **viewport units :** vw and vh are the viewport width and height. They are used when something has to be sized wrt to the viewport size. 1vh means 1% of the viewport height and 1vw means 1% of the viewport width.
-  ### Tips
-  1. Use rem instead of vh,vw,px etc. as rem scales relative to html elements font size(16px by default) . It is consistent,scalable and easy to manage across the entire website.
-2. **vmin**  
-   Takes the **smaller** value of `vw` or `vh`.  
-   <br>
-   **Example:**  
-   If the viewport is 1200px wide and 600px tall:  
-   `1vmin = 1% of 600px = 6px`
+# 🧮 CSS Units
 
-3. **vmax**  
-   Takes the **larger** value of `vw` or `vh`.  
-   <br>
-   **Example:**  
-   Using the same viewport (1200px wide and 600px tall):  
-   `1vmax = 1% of 1200px = 12px`
+CSS uses a variety of units to express **lengths**, **sizes**, and **positions**.
+
+---
+
+## 1. **Absolute Units**
+
+These are fixed and not responsive.  
+Examples include:
+
+- `px` – pixels (most commonly used absolute unit)
+- `pt` – points (used in print)
+- `cm`, `mm`, `in` – centimeters, millimeters, inches
+
+### ❗ Downsides:
+- Not scalable
+- Poor accessibility on different screen sizes
+
+---
+
+## 2. **Relative Units**
+
+These adapt to screen size or parent element and are **responsive-friendly**.
+
+### 📏 Common Relative Units:
+
+### a. `em`
+- Relative to the **font-size of the parent** element.
+- `2em` = 2× parent’s font-size
+
+### b. `rem`
+- Relative to the **root element’s** (`html`) font-size.
+- `1rem` = default browser font-size (usually 16px)
+
+> ✅ **Why use rem over px/em?**  
+Rem ensures **consistency** across all components regardless of nesting, and it's more **predictable** than `em`, which depends on its parent.  
+Rem also scales better for **accessibility** (when the user adjusts root font size).
+
+### c. `%`  
+- Relative to the **parent** container’s size (width/height).
+
+---
+
+## 3. **Viewport Units**
+
+Viewport = the visible portion of the browser window.
+
+### a. `vw`  
+- 1vw = 1% of the viewport width
+
+### b. `vh`  
+- 1vh = 1% of the viewport height
+
+### c. `vmin`  
+- Takes the **smaller** value of `vw` or `vh`
+
+#### 📌 Example:
+If the viewport is **1200px wide** and **600px tall**:  
+`1vmin = 1% of 600px = 6px`
+
+### d. `vmax`  
+- Takes the **larger** value of `vw` or `vh`
+
+#### 📌 Example:
+Using the same viewport:  
+`1vmax = 1% of 1200px = 12px`
+
+---
+
+## 💡 Best Practices: Choosing the Right Unit
+
+| Use Case             | Suggested Unit   | Reason                                          |
+|----------------------|------------------|--------------------------------------------------|
+| Font Sizes           | `rem`            | Consistent & scalable with root size            |
+| Element Sizing       | `%`, `rem`, `vw` | Flexible and responsive                         |
+| Spacing (margin/pad) | `rem`, `em`      | Scales with typography                          |
+| Fullscreen Sections  | `vh`, `vw`       | Matches viewport dimensions                     |
+| Avoid                | `px` (for layout) | Not responsive, breaks on small screens         |
+
+---
+
+## 🎯 Extra Tip: Use `calc()` with units
+
+Combine units for more flexible design:
+
+```css
+.hero {
+  height: calc(100vh - 60px);
+}
