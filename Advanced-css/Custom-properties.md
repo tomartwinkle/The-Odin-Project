@@ -57,4 +57,47 @@ the :root selector is used when we want to use a custom property on any of the v
 
 ```
 This way we dont need to worry about defining the property again and again and making sure it's in the valid scope if we want many classes to access that property.
-.
+## Media Queries 
+Media queries are a powerful feature in CSS that allow you to apply styles based on the user's device characteristics, like screen size, resolution, or theme preference.
+<br>**Syntax**
+```
+@media(condition){
+//css rules
+}
+```
+example : 
+```
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+```
+This applies the background color only when the screen width is 600px or less.<br><br>
+## prefers-color-scheme
+This media query checks if the user has a system-wide theme preference for light or dark mode.
+```
+/* Default styles (light theme) */
+:root{
+--background-color:#ffffff;
+--text-color:#000000;
+}
+/* Dark mode override */
+@media(prefers-color-scheme){
+:root {
+    --bg-color: #121212;
+    --text-color: #f0f0f0;
+  }
+}
+```
+This automatically switches themes based on OS/browser settings—no JavaScript required!
+### Tips 
+Use media queries to build responsive designs.<br>
+
+1. prefers-color-scheme supports only light and dark.
+
+2. Not all browsers or devices may support every media query—check compatibility!
+
+3. Combine with CSS custom properties for easy theme switching.
+
