@@ -150,6 +150,7 @@ Object.getPrototypeOf(Object.prototype); // null
 ```
 ### Setting Up Inheritance
 ### Correct Way using Object.setPrototypeOf()
+html : 
 ```
 function Person(name) {
   this.name = name;
@@ -180,5 +181,108 @@ player1.getMarker();  // My marker is 'X'
 ```
 Player.prototype = Person.prototype; // Don't do this!
 ```
+# Assignment - create a Library 
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Library Portal</h1>
+    <header><button class="addBook">Add Book</button></header>
 
+    <div id="inputBook" style="display: none;">
+        <div class="flex-column">
+            <div>
+                <label for="title">Title</label>
+                <input type="text" placeholder="title" id="title">
+             </div>
+            <div>
+                 <label for="author">Author</label>
+                <input type="text" placeholder="author" id="author">
+            </div>
+            <div>
+                <label for="pages">Pages</label>
+                <input type="number" placeholder="pages" id="pages">
+            </div>
+            <div>
+                <select id="read">
+                    <option value="read">Read</option>
+                    <option value="not read">Not Read</option>
+                </select>
+            </div>
+        <button id="submitBook" type="submit">Submit</button>
+        </div>
+    </div>
+    <div class="displayBooks">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+```
+js : 
+```
+const library = []; // empty array to store books
+
+function Books(title, author, pages, read) {
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+}
+
+function AddBook(title, author, pages, read) {
+    const newBook = new Books(title, author, pages, read);
+    library.push(newBook);
+    displayBooks(newBook); // pass new book to display
+}
+
+function displayBooks(book) {
+    const bookContainer = document.querySelector(".displayBooks");
+    const card = document.createElement("div");
+    card.classList.add("book-card");
+    card.innerHTML = `
+        <h3>${book.title}</h3>
+        <p><strong>Author:</strong> ${book.author}</p>
+        <p><strong>Pages:</strong> ${book.pages}</p>
+        <p><strong>Status:</strong> ${book.read}</p>
+        <div class="flex-row">
+        <button id="readStatus">Read</button>
+        <button id="removeBook">remove</button></div>
+    `;
+    bookContainer.appendChild(card);
+}
+
+// Show form on button click
+const addBookBtn = document.querySelector(".addBook");
+addBookBtn.addEventListener("click", () => {
+    document.getElementById("inputBook").style.display = "block";
+});
+
+// Handle submit
+const submitBtn = document.getElementById("submitBook");
+submitBtn.addEventListener("click", () => {
+    document.getElementById("inputBook").style.display = "none";
+
+    // Get values from form
+    const title = document.getElementById("title").value;
+    const author = document.getElementById("author").value;
+    const pages = document.getElementById("pages").value;
+    const read = document.getElementById("read").value;
+
+    console.log("Title:", title);
+    console.log("Author:", author);
+    console.log("Pages:", pages);
+    console.log("Read:", read);
+
+    AddBook(title, author, pages, read);
+});
+const readStatus=document.querySelector(".readStatus");
+//read and remove options 
+
+```
 
