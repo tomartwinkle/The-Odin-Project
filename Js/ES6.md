@@ -11,9 +11,7 @@ Before ESM, JavaScript relied on patterns like:
 - ESM Solution: Each file is its own private module scope, and you explicitly export/import what you need.
 <br><br>
 `export` → to expose something from a module.
-<br>
 `import` → to use something from another module.
-<br><br>
 # 2 types of Exports : named and default 
 Lets assume we have 2 js files one.js and two.js.
 ## Named 
