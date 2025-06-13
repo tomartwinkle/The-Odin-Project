@@ -1,0 +1,380 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+  color: #5E574E;
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+header {
+  background-color: rgba(243, 235, 228, 0.666);
+  color: #4B2E2E;
+  font-size: 18px;
+  margin: 0;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 0px 0px 15px 15px;
+}
+.tagline {
+  font-size: 1.2rem;
+  color: #f5e8dc;
+
+  margin-top: 1rem;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-heading {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: #4B2E2E;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.85;
+  animation: fadeVideo 60s ease-in-out forwards;
+}
+.hero-content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+nav a {
+  text-decoration: none;
+  color: #4B2E2E;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #588157; 
+}
+
+
+@keyframes fadeVideo {
+  0% { opacity: 0.9; }
+  95% { opacity: 0.6; }
+  100% { opacity: 0.3; }
+}
+#menu{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+.sub-heading{
+    margin-top:70px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: left;
+    margin-left: 20px;
+    color:#588157;
+}
+.coffee-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 50px;
+  color: #4B2E2E;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+
+.coffee {
+background-color: #f5e8dc;
+  border-radius: 8px;
+   border: 2px solid #f5dbc2;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  width: 90%;
+}
+.coffee:hover{
+    background-color: #f5e8dca6;
+    opacity: 0.7;
+}
+.coffee img {
+  width: 180px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.coffee h1 {
+  font-size: 20px;
+  margin: 15px 0 5px 0;
+  text-align: center;
+}
+
+.description{
+  font-size: 16px;
+  text-align: center;
+  font-weight: 300;
+  color: #5E574E;
+  margin: 5px 0;
+}
+
+.price {
+  color: #588157;
+  font-weight: 800;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.align-adjacent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.food-grid{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin: 20px;
+    margin-top: 50px;
+
+}
+.food{
+    background-color:#f6eee6;
+  border-radius: 8px;
+   border: 2px solid #f7ece1;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+}
+.food:hover{
+    background-color: #f6eee6e4;
+    opacity: 0.7;
+}
+.food h1{
+  font-size: 20px;
+  margin: 15px 0 5px 0;
+  text-align: center;
+}
+.food img{
+ width: 190px;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin: 0 auto;
+
+}
+.food-description{
+    font-size: 16px;
+  text-align: center;
+  font-weight: 300;
+  color: #5E574E;
+  margin: 5px 0;
+}
+.about-page{
+    display: flex;
+    flex-direction: row;
+    gap: 230px;
+  margin: 100px;
+}
+.about-heading{
+    color:#4B2E2E;
+    text-align: left;
+    margin-top: 40px;
+    font-size: 100px;
+
+    font-style: italic;
+    font-weight: 500;
+
+}
+.about-para{
+    width: 700px;
+    height: auto;
+    text-align: left;
+
+    color:#5E574E;
+    font-size: 22px;
+    font-weight: 400;
+}
+.about-page img{
+    margin-top: 70px;
+    width: 400px;
+    height: 300px;
+    justify-content: right;
+    border-radius: 12px;
+}
+#contact{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+.contact-header{
+     color:#5E574E;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 90px;
+    font-style: italic;
+    font-weight: 300;
+}
+.footer-contact {
+  background-color: #3e2723; 
+  color: #f5e8dc;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Lora', serif;
+  border-radius: 30px 30px 0 0;
+  margin-top: 80px;
+}
+
+.footer-contact h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #f5e8dc;
+}
+
+.footer-contact p {
+  margin: 8px 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.footer-contact .contact-details p {
+  font-size: 14px;
+  color: #d7ccc8;
+}
+
+.footer-contact .socials {
+  margin-top: 15px;
+}
+
+.footer-contact .socials a {
+  color: #d7ccc8;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-contact .socials a:hover {
+  color: #c7b198;
+}
+
+.footer-contact .pun {
+  margin-top: 25px;
+  font-style: italic;
+  color: #c0a080;
+  font-weight: 600;
+}
+/* Reservation Page Styling */
+.reservation-page {
+  padding: 50px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 60px auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Lora', serif;
+}
+
+.reservation-page h2 {
+  text-align: center;
+  color: #4B2E2E;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.reservation-form label {
+  font-weight: bold;
+  font-size: 16px;
+  color: #4B2E2E;
+}
+
+.reservation-form input,
+.reservation-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #fff;
+  color: #4B2E2E;
+  box-sizing: border-box;
+}
+
+.reserve-btn {
+  background-color: #588157;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 80px;
+  align-self: center;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.reserve-btn:hover {
+  background-color: #466644;
+}
