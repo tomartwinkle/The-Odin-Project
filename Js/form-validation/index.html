@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link href="./styles.css" rel="stylesheet">
+</head>
+<body>
+    <form class="myform" novalidate>
+        <label for="mail">Email : </label>
+        <input type="email" name="mail" id="mail" placeholder="xyz@example.com" required/>
+        <span class="error"></span>
+        <label for="country">Country : </label>
+        <input type="text" id="country" name="country" placeholder="India" required/>
+        <span class="error"></span>
+        <label for="postal-code">Postal Code : </label>
+        <input type="text" id="postal-code" name="postal-code" placeholder="122101" required/>
+        <span class="error"></span>
+        <label for="pass">Password : </label>
+        <input type="password" name="pass" id="pass" minlength="7" required/>
+        <span class="error"></span>
+        <button type="submit">submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
