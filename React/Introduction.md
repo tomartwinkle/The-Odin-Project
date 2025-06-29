@@ -9,7 +9,7 @@ We will use Vite's CLI to create a react project template.
 **creating a react app :**
 1. In the VSCode terminal write the following code and make sure to use the LTS latest version or errors can occur :
 ```
-npm create Vite@latest my-first-react-app -- --template react
+npm create vite@latest my-first-react-app -- --template react
 ```
 We can replace 'my-first-react-app' with any other name
 2. Then move to that project and configure npm
@@ -21,7 +21,7 @@ npm run dev
 3. The local host will open a Vite + react app
 4. Alternatively, If ur in a github repo then u can cd to that repo and then instead of project name use `.` to specify that this repo will be the current directory.
 ```
-npm create Vite@latest . -- --template react
+npm create vite@latest . -- --template react
 ```
 # Delving Deeper
 `public` folder is where static assests related to our app go like images , icons etc.<br>
